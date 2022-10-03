@@ -18,7 +18,7 @@ conda install −c conda−forge pybind11
 
 To use the pythonPal, we need to let OpenFOAM know where both pybind11 and the Python interpreter are located in the system. 
 
-An easy way to do this is to declare two environment variables, _PYBIND11_INC_DIR_ and _PYBIND11_LIB_DIR_, whose values are retrieved with the following commands:
+An easy way to do this is to declare two environment variables, `PYBIND11_INC_DIR` and `PYBIND11_LIB_DIR`, whose values are retrieved with the following commands:
 
 ```bash
 export PYBIND11_INC_DIR=$(python3 −m pybind11 −−includes)
@@ -27,14 +27,14 @@ export PYBIND11_LIB_DIR=$(python −c ’from distutils import sysconfig; print(
 
 Then, this environment variables must be included in your OpenFOAM code:
 
-- Include _PYBIND11_INC_DIR_ in the EXE_INC_ field, for example:
+- Include `PYBIND11_INC_DIR` in the `EXE_INC` field, for example:
 
 ```bash
 EXE_INC = \
  $(PYBIND11 INC DIR)
 ```
 
-- Include _PYBIND11_LIB_DIR_ and the Python C dynamic library in the _EXE_LIBS_ field (or in the _LIB_LIBS_ field if compiling a library), for example:
+- Include `PYBIND11_LIB_DIR` and the Python C dynamic library in the `EXE_LIBS` field (or in the `LIB_LIBS` field if compiling a library), for example:
 
 ```bash
 EXE_LIBS = \

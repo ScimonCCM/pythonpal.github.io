@@ -4,7 +4,9 @@
 
 # Contributors
 
-We'd love to hear your comments about pythonPal. Feel free to reach out any of the contributors:
+We'd love to hear your comments about pythonPal. 
+
+Feel free to reach out any of the contributors:
 
 ## Simon Rodriguez
 

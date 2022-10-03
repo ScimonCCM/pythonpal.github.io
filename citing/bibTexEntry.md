@@ -6,7 +6,7 @@
 
 Currently, the paper where we introduce pythonPal is under review. 
 
-In the meanwhile, please cite our pre-print:
+In the meanwhile, please cite our [pre-print](https://tinyurl.com/pybind11foam):
 
 ```
 @misc{https://doi.org/10.48550/arxiv.2203.16394,

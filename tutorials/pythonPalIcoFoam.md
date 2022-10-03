@@ -5,21 +5,21 @@ sort: 1
 # My first tutorial: pythonPalIcoFoam
 
 
-In this tutorial, we create a modified version of _icoFoam_ called _pythonPalIcoFoam_, where we use pythonPal to calculate the specific kinetic energy, _k=U*U/2_, via Python. Then, we solve the classic [cavity](https://doc.cfd.direct/openfoam/user-guide-v6/cavity) case with this.
+In this tutorial, we create a modified version of `icoFoam` called `pythonPalIcoFoam`, where we use pythonPal to calculate the specific kinetic energy, _k=U*U/2_, via Python. Then, we solve the classic [cavity](https://doc.cfd.direct/openfoam/user-guide-v6/cavity) case with this.
 
-Provided that _pybind11_ is installed (see [installing](/preliminaries/installingPybind.html#installing-pybind11)), the steps to go from _icoFoam_ to _pythonPalIcoFoam_ are:
+Provided that _pybind11_ is installed (see [installing](/preliminaries/installingPybind.html#installing-pybind11)), the steps to go from `icoFoam` to `pythonPalIcoFoam` are:
 
-- Copy the base _icoFoam_ solver to your working directory and rename it to _pythonPalIcoFoam.C_.
+- Copy the base `icoFoam` solver to your working directory and rename it to `pythonPalIcoFoam.C`.
 
-- Copy the _pythonPal.H_ file to your working directory.
+- Copy the `pythonPal.H` file to your working directory.
 
-- Include _pythonPal.H_ at the top of _pythonPalIcoFoam.C_;
+- Include `pythonPal.H` at the top of `pythonPalIcoFoam.C`;
 
 ```C
 #include "pythonPal.H"
 ```
 
-- In _createFields.H_, construct a _volScalarField_ called _k_, initialised to zero;
+- In `createFields.H`, construct a `volScalarField` called `k`, initialised to zero;
 
 ```C
 volScalarField k
@@ -37,9 +37,9 @@ volScalarField k
 );
 ```
 
-- In the parent folder, create a Python file and define a function that receives the _U_ field from OpenFOAM and calculates _k_. 
+- In the parent folder, create a Python file and define a function that receives the `U` field from OpenFOAM and calculates `k`. 
 
-We called that file _python_script.py_ and the function _calculatek_.
+We called that file `python_script.py` and the function _calculatek_.
 
 ```bash
 touch python_script.py
@@ -50,26 +50,26 @@ def calculatek(field):
   return np.sum(field * field, axis = 1)[:, np.newaxis] / 2
 ```
 
-- In _pythonPalIcoFoam.C_, create an object of type pythonPal and load the Python file _python_script.py_:
+- In `pythonPalIcoFoam.C`, create an object of type pythonPal and load the Python file `python_script.py`:
 
 ```bash
 pythonPal myPythonPal("python_script.py", true);
 ```
 
-- At the end of the time-loop, pass the _U_ and _k_ fields to Python via pythonPal:
+- At the end of the time-loop, pass the `U` and `k` fields to Python via pythonPal:
 
 ```C
 myPythonPal.passToPython(U, "U");
 myPythonPal.passToPython(k, "k");
 ```
 
-- Calculate _k_ via pythonPal:
+- Calculate `k` via pythonPal:
 
 ```C
 myPythonPal.execute("k[:, :] = calculatek(U)");
 ```
 
-- Finally, write the _k_ field to disk, e.g. for viewing in ParaView.
+- Finally, write the `k` field to disk, e.g. for viewing in ParaView.
 
 ```C
 k.write();
