@@ -11,7 +11,7 @@ With pybind11, they were able to embed a Python interpreter in OpenFOAM and inte
 <img src="/images/6steps.png" alt="6 steps to communicate Python and OpenFOAM">
 
 
-To achieve an efficient data transfer, they combined [_ctypes_](https://docs.python.org/3/library/ctypes.html), NumPy's buil-in support for [_ctypes_](https://docs.python.org/3/library/ctypes.html) and OpenFOAM's _data_ (or _cdata_) functions for OpenFOAM _Lists_/_fields_. 
+To achieve an efficient data transfer, they combined [_ctypes_](https://docs.python.org/3/library/ctypes.html), NumPy's built-in support for [_ctypes_](https://docs.python.org/3/library/ctypes.html) and OpenFOAM's `data` (or `cdata`) functions for OpenFOAM `Lists/fields`. 
 
 
-**pythonPal hides the details related to _ctypes_, _NumPy_ and _data_ by offering higher-level methods to transfer data between OpenFOAM and Python and execute general Python code.**
+**pythonPal hides the details related to `ctypes`, `NumPy` and `data` by offering higher-level methods to transfer data between OpenFOAM and Python and execute general Python code.**

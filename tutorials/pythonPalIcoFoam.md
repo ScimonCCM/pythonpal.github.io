@@ -39,7 +39,7 @@ volScalarField k
 
 - In the parent folder, create a Python file and define a function that receives the `U` field from OpenFOAM and calculates `k`. 
 
-We called that file `python_script.py` and the function _calculatek_.
+We called that file `python_script.py` and the function `calculatek`.
 
 ```bash
 touch python_script.py
