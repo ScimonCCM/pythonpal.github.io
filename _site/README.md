@@ -10,7 +10,7 @@
 pythonPal4foam is a header-only library for running Python codes in OpenFOAM, including the manipulation of OpenFOAM `Fields` via Python.
 
 ## Where do I start?
-First, check the [preliminaries](preliminaries/README.md) and install the dependencies. Then, follow the [tutorial](tutorials/README.md) guide.
+First, check the [preliminaries](preliminaries/installingPybind.md) and install the dependencies. Then, follow the [tutorial](tutorials/pythonPalIcoFoam.md) guide.
 
 ## Acknowledgements
 

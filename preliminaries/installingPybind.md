@@ -6,7 +6,7 @@
 
 ## Installing pybind11
 
-As explained in [how Does It Work?](howDoesItWork/README.md), pythonPal uses the header-only library [pybind11](https://pybind11.readthedocs.io/en/stable/index.html) to enable the Python/OpenFOAM communication. 
+As explained in [how Does It Work?](../howDoesItWork/runningPythoninOpenFOAMwithpybind11.md), pythonPal uses the header-only library [pybind11](https://pybind11.readthedocs.io/en/stable/index.html) to enable the Python/OpenFOAM communication. 
 
 We recommend to install pybind11 with [Conda](https://docs.conda.io/en/latest/). On a *nix system:
 
@@ -44,4 +44,4 @@ EXE_LIBS = \
 
 ## Download pythonPal
 
-Finally, download the [pythonPal.H](pythonPal.H) file and include it in your OpenFOAM application, as explained in the [tutorials](tutorials/README.md).
+Finally, download the [pythonPal.H](pythonPal.H) file and include it in your OpenFOAM application, as explained in the [tutorials](../tutorials/pythonPalIcoFoam.md).
