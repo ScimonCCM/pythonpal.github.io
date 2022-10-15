@@ -28,3 +28,5 @@ industry partners.
 the provision of computational facilities and support (www.ichec.ie).
 
 
+<img src="images/LogosPythonPalWebsite.svg" width="100%%" > 
+<!-- <a href="https://research.ie/"> <img src="images/ircLogo.png" width="30%">  -->
