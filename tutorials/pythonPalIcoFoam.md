@@ -37,13 +37,7 @@ volScalarField k
 );
 ```
 
-- In the parent folder, create a Python file and define a function that receives the `U` field from OpenFOAM and calculates `k`. 
-
-We called that file `python_script.py` and the function `calculatek`.
-
-```bash
-touch python_script.py
-```
+- In the parent folder, create a Python file and define a function that receives the `U` field from OpenFOAM and calculates `k`. We called that file `python_script.py` and the function `calculatek`.
 
 ```Python
 def calculatek(field):
@@ -78,3 +72,5 @@ k.write();
 Figure shows the cavity case’s velocity magnitude and specific kinetic energy field results.
 
 <img src="/images/pythonPalResult.PNG" alt="cavity case's results" width="80%" >
+
+To learn more about how pythonPal works, see [How Does It Work?](../howDoesItWork/runningPythoninOpenFOAMwithpybind11.md).
