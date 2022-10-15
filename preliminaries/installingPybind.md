@@ -9,7 +9,7 @@
 pythonPal uses the header-only library [pybind11](https://pybind11.readthedocs.io/en/stable/index.html) to enable the Python/OpenFOAM communication. 
 <!-- For more details, see [How Does It Work?](../howDoesItWork/runningPythoninOpenFOAMwithpybind11.md). -->
 
-We recommend to install pybind11 with [Conda](https://docs.conda.io/en/latest/). On a *nix system:
+We recommend installing pybind11 with [Conda](https://docs.conda.io/en/latest/). On a *nix system:
 
 ```bash
 conda install −c conda−forge pybind11
