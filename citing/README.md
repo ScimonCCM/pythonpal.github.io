@@ -2,6 +2,6 @@
 sort: 4
 ---
 
-# citing
+# Citing
 
 {% include list.liquid all=true %}

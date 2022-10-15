@@ -2,6 +2,6 @@
 sort: 5
 ---
 
-# Reference Guide
+# Reference guide
 
 {% include list.liquid all=true %}

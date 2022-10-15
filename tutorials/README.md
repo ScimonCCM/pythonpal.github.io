@@ -2,7 +2,7 @@
 sort: 2
 ---
 
-# tutorials
+# Tutorials
 
 
 {% include list.liquid all=true %}

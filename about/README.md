@@ -2,6 +2,6 @@
 sort: 6
 ---
 
-# about
+# About
 
 {% include list.liquid all=true %}
