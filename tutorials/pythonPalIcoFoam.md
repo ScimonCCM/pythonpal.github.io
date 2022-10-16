@@ -73,4 +73,6 @@ Figure shows the cavity case’s velocity magnitude and specific kinetic energy 
 
 <img src="/images/pythonPalResult.PNG" alt="cavity case's results" width="80%" >
 
+You can watch a short videotutorial for this case, [here](https://tinyurl.com/pythonPalTutorial).
+
 To learn more about how pythonPal works, see [How Does It Work?](../howDoesItWork/runningPythoninOpenFOAMwithpybind11.md).
