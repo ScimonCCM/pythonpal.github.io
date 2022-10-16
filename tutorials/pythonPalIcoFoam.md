@@ -4,6 +4,7 @@ sort: 1
 
 # My first tutorial: pythonPalIcoFoam
 
+You can watch a short videotutorial for this case, [here](https://tinyurl.com/pythonPalTutorial).
 
 In this tutorial, we create a modified version of `icoFoam` called `pythonPalIcoFoam`, where we use pythonPal to calculate the specific kinetic energy, _k=U*U/2_, via Python. Then, we solve the classic [cavity](https://doc.cfd.direct/openfoam/user-guide-v6/cavity) case with this.
 
@@ -74,6 +75,6 @@ Figure shows the cavity case’s velocity magnitude and specific kinetic energy 
 
 <img src="/images/pythonPalResult.PNG" alt="cavity case's results" width="80%" >
 
-You can watch a short videotutorial for this case, [here](https://tinyurl.com/pythonPalTutorial).
+<!-- You can watch a short videotutorial for this case, [here](https://tinyurl.com/pythonPalTutorial). -->
 
 To learn more about how pythonPal works, see [How Does It Work?](../howDoesItWork/runningPythoninOpenFOAMwithpybind11.md).
