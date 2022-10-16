@@ -9,7 +9,8 @@ In this tutorial, we create a modified version of `icoFoam` called `pythonPalIco
 
 Provided that _pybind11_ is installed (see [installing](/preliminaries/installingPybind.html#installing-pybind11)), the steps to go from `icoFoam` to `pythonPalIcoFoam` are:
 
-- Copy the base `icoFoam` solver to your working directory and rename it to `pythonPalIcoFoam.C`.
+- Copy the icoFoam directory to a directory pythonPalIcoFoam, then rename the .C file inside it and the C file and executable file names inside Make/files. ( Just replace "icoFoam" with "pythonPalIcoFoam")
+<!-- - Copy the base `icoFoam` solver to your working directory and rename it to `pythonPalIcoFoam.C`. -->
 
 - Copy the `pythonPal.H` file to your working directory.
 
