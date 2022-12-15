@@ -26,7 +26,7 @@ export PYBIND11_INC_DIR=$(python3 −m pybind11 −−includes)
 export PYBIND11_LIB_DIR=$(python −c ’from distutils import sysconfig; print(sysconfig.get_config_var("LIBDIR"))’)
 ```
 
-Then, this environment variables must be included in your OpenFOAM code:
+Then, these environment variables must be included in your OpenFOAM code:
 
 - Include `PYBIND11_INC_DIR` in the `EXE_INC` field, for example:
 

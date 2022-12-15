@@ -4,19 +4,38 @@ sort: 4
 
 # How to cite
 
+The pythonPal was introduced by [Rodriguez and Cardiff (2022)](https://journal.openfoam.com/index.php/ofj/article/view/79) in a paper for the OpenFOAM Journal. 
+
+
 <!-- {% include list.liquid all=true %} -->
 
-## BibTex entry
+<!-- ## BibTex entry -->
 
-The pythonPal was introduced by [Rodriguez and Cardiff (2022)](https://journal.openfoam.com/index.php/ofj/article/view/79) in a paper for the OpenFOAM Journal. 
+## Plain Text Citation
+
+
+```
+Rodriguez, S. & Cardiff, P. (2022). A General Approach for Running Python Codes in OpenFOAM Using an Embedded PYBIND11 Python Interpreter. OpenFOAM® Journal, 2, 166–182. https://doi.org/10.51560/ofj.v2.79.
+```
+
+
+## BibTex Citation
+
 
 Citation data:  
 
 ```
-Rodriguez, S. ., & Cardiff, P. (2022). 
-A General Approach for Running Python Codes in OpenFOAM Using an Embedded PYBIND11 Python Interpreter. 
-OpenFOAM® Journal, 2, 166–182. 
-https://doi.org/10.51560/ofj.v2.79
+@article{Rodriguez_Cardiff_2022,
+title={A General Approach for Running Python Codes in OpenFOAM Using an Embedded PYBIND11 Python Interpreter},
+volume={2},
+url={https://journal.openfoam.com/index.php/ofj/article/view/79},
+DOI={10.51560/ofj.v2.79},
+abstractNote={As the overlap between traditional computational mechanics and machine learning grows,there is an increasing demand for straightforward approaches to interface Python-based procedures withC++-based OpenFOAM. This article introduces one such general methodology, allowing the executionof Python code directly within an OpenFOAM solver without requiring Python code translation.  Theproposed approach is based on the lightweight library pybind11, where OpenFOAM data is transferredto an embedded Python interpreter for manipulation, and results are returned as needed.  Following areview of related approaches, the article describes the proposed method, focusing on data transfer be-tween Python and OpenFOAM, executing Python scripts and functions, and practical details about theimplementation in OpenFOAM. Three complementary test cases are presented to demonstrate the ap-proach:  a Python-based velocity profile boundary condition, a Python-based solver for prototyping, anda machine learning mechanical constitutive law class for solids4foam, which performs field calculations},
+journal={OpenFOAM® Journal},
+author={Rodriguez, Simon and Cardiff, Philip},
+year={2022},
+month={Dec.},
+pages={166–182}
 }
 ```
 Also, you can download the BibTex entry [here](Rodriguez_Cardiff_pybind11Foam.bib).

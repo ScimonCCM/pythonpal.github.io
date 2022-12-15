@@ -6,14 +6,14 @@ sort: 1
 
 You can watch a short videotutorial for this case, [here](https://tinyurl.com/pythonPalTutorial).
 
-In this tutorial, we create a modified version of `icoFoam` called `pythonPalIcoFoam`, where we use pythonPal to calculate the specific kinetic energy, _k=U*U/2_, via Python. Then, we solve the classic [cavity](https://doc.cfd.direct/openfoam/user-guide-v6/cavity) case with this.
+In this tutorial, we create a modified version of `icoFoam` called `pythonPalIcoFoam`, where we use pythonPal to calculate the specific kinetic energy, $$k = \frac {1}{2} U \cdot U $$
 
 Provided that _pybind11_ is installed (see [installing](/preliminaries/installingPybind.html#installing-pybind11)), the steps to go from `icoFoam` to `pythonPalIcoFoam` are:
 
-- Copy the icoFoam directory to a directory pythonPalIcoFoam, then rename the .C file inside it and the C file and executable file names inside Make/files. ( Just replace "icoFoam" with "pythonPalIcoFoam")
+- Copy the icoFoam directory to a directory pythonPalIcoFoam, then rename the .C file inside it and the C file and executable file names inside Make/files ( Just replace "icoFoam" with "pythonPalIcoFoam").
 <!-- - Copy the base `icoFoam` solver to your working directory and rename it to `pythonPalIcoFoam.C`. -->
 
-- Copy the `pythonPal.H` file to your working directory.
+- Copy the `pythonPal.H` file to the pythonPalIcoFoam directory.
 
 - Include `pythonPal.H` at the top of `pythonPalIcoFoam.C`;
 
