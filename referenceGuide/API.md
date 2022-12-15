@@ -22,3 +22,10 @@ When an OpenFOAM `GeometricField` is passed via `passToPython`, it will only tra
 > void execute(const word& command) const 
 
 This executes the Python command given by `command`.
+
+
+# GitHub repository
+
+You can navigate the development files [here](https://github.com/solids4foam/pythonpal4foam). 
+
+Feel free to submit your contributions to our code.

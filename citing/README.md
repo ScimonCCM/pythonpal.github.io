@@ -8,19 +8,15 @@ sort: 4
 
 ## BibTex entry
 
-Currently, the paper where we introduce pythonPal is under review. 
+The pythonPal was introduced by [Rodriguez and Cardiff (2022)](https://journal.openfoam.com/index.php/ofj/article/view/79) in a paper for the OpenFOAM Journal. 
 
-In the meanwhile, please cite our [pre-print](https://tinyurl.com/pybind11foam):
+Citation data:  
 
 ```
-@misc{https://doi.org/10.48550/arxiv.2203.16394,
-doi = {10.48550/ARXIV.2203.16394},
-url = {https://arxiv.org/abs/2203.16394},
-author = {Rodriguez, Simon and Cardiff, Philip},
-keywords = {Computational Engineering, Finance, and Science (cs.CE), FOS: Computer and information sciences, FOS: Computer and information sciences},
-title = {A general approach for running Python codes in OpenFOAM using an embedded pybind11 Python interpreter},
-publisher = {arXiv},
-year = {2022},
-copyright = {Creative Commons Attribution 4.0 International}
+Rodriguez, S. ., & Cardiff, P. (2022). 
+A General Approach for Running Python Codes in OpenFOAM Using an Embedded PYBIND11 Python Interpreter. 
+OpenFOAM® Journal, 2, 166–182. 
+https://doi.org/10.51560/ofj.v2.79
 }
 ```
+Also, you can download the BibTex entry [here](Rodriguez_Cardiff_pybind11Foam.bib).

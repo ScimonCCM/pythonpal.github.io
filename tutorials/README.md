@@ -7,4 +7,4 @@ sort: 2
 
 {% include list.liquid all=true %}
 
-For additional mixed Python/OpenFOAM codes, see [Rodriguez and Cardiff (2022)](https://tinyurl.com/pybind11foam).
+For additional mixed Python/OpenFOAM codes, see [Rodriguez and Cardiff (2022)](https://journal.openfoam.com/index.php/ofj/article/view/79).

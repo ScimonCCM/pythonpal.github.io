@@ -4,7 +4,7 @@ sort: 1
 
 # Running Python in OpenFOAM with pybind11
 
-In [Rodriguez and Cardiff (2022)](https://www.researchgate.net/publication/359614018_A_general_approach_for_running_Python_codes_in_OpenFOAM_using_an_embedded_pybind11_Python_interpreter), a general approach to run Python codes in OpenFOAM was introduced, based on the header-only library pybind11. A Python interpreter is embedded in OpenFOAM and interacted with. The conceptual flowchart they presented is shown in the figure.
+In [Rodriguez and Cardiff (2022)](https://journal.openfoam.com/index.php/ofj/article/view/79), a general approach to run Python codes in OpenFOAM was introduced, based on the header-only library pybind11. A Python interpreter is embedded in OpenFOAM and interacted with. The conceptual flowchart they presented is shown in the figure.
 
 <!-- In 2022, Rodriguez and Cardiff introduced an approach to run Python codes in OpenFOAM ([see paper](https://tinyurl.com/pybind11foam)), based on the header-only library pybind11. -->
 
