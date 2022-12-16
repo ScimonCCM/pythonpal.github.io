@@ -16,4 +16,4 @@ In [Rodriguez and Cardiff (2022)](https://journal.openfoam.com/index.php/ofj/art
 Efficient data transfer is achieved by combining [_ctypes_](https://docs.python.org/3/library/ctypes.html), NumPy's built-in support for [_ctypes_](https://docs.python.org/3/library/ctypes.html) and OpenFOAM's `data` (or `cdata`) functions for OpenFOAM `Lists/Fields`. 
 
 
-pythonPal hides the details related to `ctypes`, `NumPy` and `data` by offering higher-level methods to transfer data between OpenFOAM and Python and execute general Python code.
+`pythonPal` hides the details related to `ctypes`, `NumPy` and `data` by offering higher-level methods to transfer data between OpenFOAM and Python and execute general Python code.
